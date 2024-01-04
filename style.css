@@ -1,0 +1,110 @@
+/* Google Font : Figtree */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  /* Primary Color */
+  --r-yellow: hsl(47, 88%, 63%);
+
+  /* Neutral Color */
+  --r-white: hsl(0, 0%, 100%);
+  --r-grey: hsl(0, 0%, 50%);
+  --r-black: hsl(0, 0%, 7%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--r-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem;
+}
+
+.card {
+  box-shadow: 7px 7px 0px var(--r-black);
+  transition: 0.2s;
+  width: 20em;
+  background-color: var(--r-white);
+  padding: 1rem;
+  border: 1px solid var(--r-black);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card:hover {
+  box-shadow: 12px 12px 0px var(--r-black);
+  transition: 0.2s;
+}
+
+.card-img img {
+  width: 100%;
+  height: fit-content;
+  border-radius: 12px;
+}
+
+.learning-time {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.card-subtitle p {
+  font-size: 14px;
+  width: fit-content;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--r-yellow);
+  font-weight: 800;
+  color: var(--r-black);
+  border-radius: 4px;
+}
+
+.time {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+h3 {
+  width: fit-content;
+  font-weight: 800;
+  color: var(--r-black);
+  transition: 0.2s;
+}
+
+h3:hover {
+  color: var(--r-yellow);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.desc {
+  font-size: 14px;
+  color: var(--r-grey);
+}
+
+.card-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.card-profile img {
+  width: 28px;
+}
+
+.card-profile p {
+  font-weight: 800;
+  font-size: 14px;
+}
